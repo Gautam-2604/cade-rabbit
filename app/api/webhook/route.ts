@@ -41,6 +41,8 @@ export async function POST(req: NextRequest) {
     const { action, number } = payload.pull_request;
     const repo = payload.repository.full_name;
     console.log(`PR #${number} ${action} in ${repo}`);
+    console.log(payload.pull_request.diff_url);
+    
   }
 
   return NextResponse.json({ ok: true });
