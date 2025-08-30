@@ -32,6 +32,8 @@ export async function POST(req: NextRequest) {
 
   const event = req.headers.get("x-github-event");
   const payload = JSON.parse(bodyBuffer.toString());
+  console.log(event, "Event");
+  
 
   if (event === "pull_request") {
     const { action, number } = payload.pull_request;
