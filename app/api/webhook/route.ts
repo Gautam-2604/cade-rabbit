@@ -8,7 +8,7 @@ export const config = {
   },
 };
 
-//Test 2 mai kr rha
+
 
 const WEBHOOK_SECRET = process.env.GITHUB_WEBHOOK_SECRET!;
 
